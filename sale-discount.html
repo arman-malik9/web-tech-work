@@ -1,0 +1,54 @@
+<html>
+<head>
+
+<script>
+//qus.1 
+document.write("1.Coffee = 70 ₹/pag <br> 2.Tea = 50 ₹/bag <br> 3. Cappuccino = 90 ₹/bag");
+function abc() {
+    var k,t,m;
+    k=70;
+    t=50;
+    m=90;
+    
+ let a = prompt("How many bags of Coffee ?" +"\n70 ₹/bag");
+    var aa=a;
+    a=a*k;
+     let b = prompt("How many bags of Tea ?" + "\n50 ₹/bag");
+    var bb=b;
+    b=b*t; 
+    let c = prompt("How many bags of Cappuccino ?" +"\n90 ₹/bag");
+    var cc=c; 
+    c=c*m;
+var g = a+b+c;
+ var j = g;
+if(g>=1000)
+{
+   
+    var h=(g*25)/100;
+    j=j-h;
+    document.write("Coffee : " + aa + "<br>" + "Tea : " + bb + "<br>" + "Cappuccino : " + cc + "<br>");
+    document.write("Total pay(without discount) : " + "<br>"+"₹" + g + "<br>");
+    document.write("<b>Total pay is (with discount) : </b>"+"₹" + j);
+    
+    document.write("<br>" + "<i>Thanks and you got 25% discount</i>");
+}
+else 
+{
+    document.write("Coffee : " + aa + "<br>" + "Tea : " + bb + "<br>" + "Cappuccino : " + cc + "<br>");
+    document.write("Total pay is: "+"₹" + j+"<br>"+"Sorry! You didn't get any discount");
+
+}
+
+}
+
+</script>
+</head>
+<body>
+<br><br>
+
+<button type = "button" onclick = "abc()">Click to Order</button>
+
+</body>
+</html>
+
+
